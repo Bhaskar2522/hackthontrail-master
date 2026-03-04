@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Orchathon – CodeLaunch 36",
   description: "Igniting Innovation. Launching Code.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
