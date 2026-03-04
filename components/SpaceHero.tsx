@@ -207,7 +207,7 @@ const SpaceHero = () => {
 
                     {/* HACKATHON COUNTDOWN TIMER */}
                     {mounted && (
-                        <div className="flex flex-col items-center min-h-[160px] justify-center">
+                        <div className="flex flex-col items-center min-h-[220px] justify-center gap-10">
                             <motion.div
                                 initial={{ opacity: 0, y: 30, scale: 0.9 }}
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -232,6 +232,19 @@ const SpaceHero = () => {
                                         <span className="text-[10px] md:text-xs font-mono text-cyan-400 tracking-widest uppercase font-bold">{time.label}</span>
                                     </div>
                                 ))}
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                                className="pointer-events-auto"
+                            >
+                                <a href="https://unstop.com/hackathons/orchathon-n-k-orchid-college-of-engineering-technologysolapur-1652140" target="_blank" rel="noopener noreferrer">
+                                    <Button variant="blue" size="lg" className="w-64 md:w-80 text-xl font-black italic tracking-wider">
+                                        REGISTER NOW
+                                    </Button>
+                                </a>
                             </motion.div>
                         </div>
                     )}

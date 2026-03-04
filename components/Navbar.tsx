@@ -87,18 +87,19 @@ const Navbar = () => {
                         initial={{ opacity: 0, x: '100%' }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: '100%' }}
-                        transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                        className="md:hidden bg-black fixed inset-0 z-[9999] flex flex-col"
+                        transition={{ duration: 0.3, ease: 'easeOut' }}
+                        className="fixed inset-0 z-[9999] md:hidden flex flex-col w-full h-full bg-black"
+                        style={{ backgroundColor: '#000000' }}
                     >
-                        {/* Mobile Menu Header */}
-                        <div className="flex items-center justify-between px-6 py-6 border-b border-white/10 bg-black">
+                        {/* Header */}
+                        <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 w-full bg-black">
                             <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
                                 <img
                                     src="/logo.png"
-                                    alt="Logo"
+                                    alt="Orchathon"
                                     className="h-10 w-auto"
                                 />
-                                <div className="text-2xl font-bold tracking-tighter text-white">
+                                <div className="text-xl font-bold tracking-tighter text-white">
                                     ORCH<span className="text-primary">ATHON</span>
                                 </div>
                             </Link>
@@ -110,19 +111,31 @@ const Navbar = () => {
                             </button>
                         </div>
 
-                        <div className="flex-1 flex flex-col space-y-10 px-8 py-16 overflow-y-auto bg-black">
+                        {/* Links */}
+                        <div className="flex-1 flex flex-col justify-center items-center gap-8 py-20 px-8 w-full bg-black">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="text-3xl font-bold text-gray-300 hover:text-primary transition-colors uppercase tracking-widest"
+                                    className="text-4xl font-bold text-white hover:text-primary transition-colors uppercase tracking-[0.2em]"
                                 >
                                     {link.name}
                                 </Link>
                             ))}
-                            <a href="https://unstop.com/hackathons/orchathon-n-k-orchid-college-of-engineering-technologysolapur-1652140" target="_blank" rel="noopener noreferrer" className="w-full pt-8">
-                                <Button variant="primary" size="lg" className="w-full text-xl" onClick={() => setIsOpen(false)}>
+                            <div className="w-full h-[1px] bg-white/10 my-4" />
+                            <a
+                                href="https://unstop.com/hackathons/orchathon-n-k-orchid-college-of-engineering-technologysolapur-1652140"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full"
+                            >
+                                <Button
+                                    variant="primary"
+                                    size="lg"
+                                    className="w-full text-xl py-6 h-auto"
+                                    onClick={() => setIsOpen(false)}
+                                >
                                     Register Now
                                 </Button>
                             </a>
