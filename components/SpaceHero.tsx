@@ -232,18 +232,7 @@ const SpaceHero = () => {
                                 ))}
                             </motion.div>
 
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5 }}
-                                className="pointer-events-auto"
-                            >
-                                <a href="https://unstop.com/hackathons/orchathon-n-k-orchid-college-of-engineering-technologysolapur-1652140" target="_blank" rel="noopener noreferrer">
-                                    <Button variant="blue" size="lg" className="w-64 md:w-80 text-xl font-extrabold text-white italic tracking-wider drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
-                                        REGISTER NOW
-                                    </Button>
-                                </a>
-                            </motion.div>
+
                         </div>
                     )}
                 </motion.div>
