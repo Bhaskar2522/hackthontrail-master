@@ -12,7 +12,7 @@ const Footer = () => {
                     />
                     <div>
                         <h3 className="text-xl font-bold text-white mb-1">ORCH<span className="text-primary">ATHON</span></h3>
-                        <p className="text-gray-500 text-sm">© 2K26 CodeLaunch 36. All rights reserved.</p>
+                        <p className="text-gray-500 text-sm">© 2K26 Team CSESA, NKOCET. All rights reserved.</p>
                     </div>
                 </div>
 

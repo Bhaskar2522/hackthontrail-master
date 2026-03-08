@@ -6,10 +6,11 @@ import { motion } from 'framer-motion';
 const Timeline = () => {
     const events = [
         { time: "March 4, 2026", title: "Theme Reveal & Registration", sub: "PHASE 01", desc: "Theme is unveiled and Unstop registration goes live. Start forming your teams!", icon: "🚀" },
-        { time: "March 4, 2026", title: "Round 1 & PPT Submission", sub: "PHASE 02", desc: "Round 1 begins with Open Innovations. Submit your project PPT for evaluation.", icon: "📄" },
+        { time: "March 4, 2026", title: "Round 1: Idea PPT, Abstract and YouTube Demo link submission", sub: "PHASE 02", desc: "Round 1 begins with Open Innovations. Submit your project PPT for evaluation.", icon: "📄" },
         { time: "March 20, 2026", title: "Google Meet Interaction", sub: "SYNC", desc: "Online interaction session with mentors and evaluators via Google Meet.", icon: "💬" },
         { time: "March 25, 2026", title: "Round 1 Results", sub: "RESULTS", desc: "Shortlisted teams are announced and notified for the next phase.", icon: "📢" },
         { time: "March 26, 2026", title: "Meeting 2", sub: "PHASE 03", desc: "Second interaction meeting exclusively for selected teams.", icon: "🤝" },
+        { time: "April 4–6, 2026", title: "Domain Selection", sub: "FINAL", desc: "Shortlisted teams will select three preferred domains through a Google Form.The final hackathon problem statement assigned to each team will be based on one of the selected domains", icon: "🧭" },
         { time: "April 4–6, 2026", title: "Offline Hackathon (36 Hrs)", sub: "FINAL", desc: "The main event! 36-hour offline hackathon at NKOCET campus. Build, hack, win!", icon: "🏆" },
     ];
 

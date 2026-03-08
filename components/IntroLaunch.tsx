@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import SplineModel from './SplineModel';
 // removed Button import since it's no longer used
 import RocketShip from './ui/RocketShip'; // Keeping this as a fallback or for specific parts if needed, but primarily using image
 
@@ -131,9 +130,13 @@ const IntroLaunch = ({ onLaunchComplete }: IntroLaunchProps) => {
                                     }}
                                 >
                                     <div className="w-full h-full relative">
-                                        <SplineModel
-                                            scene="https://my.spline.design/launchartemisrocket-bErNgiDJlc9oCwK82bRLTAXC/"
-                                            className="w-full h-full"
+                                        <video
+                                            src="/videoplayback.mp4"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                            className="w-full h-full object-cover rounded-lg"
                                         />
                                         {/* Overlay to block potential watermark interaction */}
                                         <div className="absolute bottom-0 right-0 w-32 h-12 bg-black z-20 pointer-events-none" />
@@ -266,10 +269,10 @@ const IntroLaunch = ({ onLaunchComplete }: IntroLaunchProps) => {
                                 )}
                             </AnimatePresence>
                         </div>
-                    </motion.div>
-                </motion.div>
+                    </motion.div >
+                </motion.div >
             )}
-        </AnimatePresence>
+        </AnimatePresence >
     );
 };
 

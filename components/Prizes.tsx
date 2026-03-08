@@ -247,10 +247,10 @@ const Prizes = () => {
 
                         <div className="flex -space-x-4">
                             {[
-                                "/Coordinater/hacker_01.png",
-                                "/Coordinater/webdev_guru.png",
-                                "/Coordinater/swaghunter.png",
-                                "/Coordinater/open_source.png"
+                                "/Coordinater/IMG_0609.png",
+                                "/Coordinater/WhatsApp Image 2026-03-04 at 3.42.12 PM.png",
+                                "/Coordinater/01.png",
+                                "/Coordinater/0.png"
                             ].map((url, i) => (
                                 <div key={i} className="w-12 h-12 rounded-full border-2 border-black bg-gray-800 flex items-center justify-center overflow-hidden shadow-2xl relative" style={{ zIndex: 10 - i }}>
                                     <img src={url} alt="" className="w-full h-full object-cover" />

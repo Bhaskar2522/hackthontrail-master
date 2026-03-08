@@ -54,18 +54,23 @@ const Contact = () => {
                             viewport={{ once: true }}
                             className="p-8 rounded-3xl bg-white/[0.02] border border-white/5 backdrop-blur-md group hover:border-orange-500/40 transition-all"
                         >
-                            <div className="flex items-start gap-6">
+                            <a
+                                href="https://www.google.com/maps/search/N.K.+Orchid+College+of+Engineering+%26+Technology,+Solapur"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start gap-6 cursor-pointer"
+                            >
                                 <div className="w-12 h-12 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 group-hover:scale-110 transition-transform">
                                     <MapPin className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <h4 className="text-white font-bold mb-2 uppercase tracking-wider">Mission Base</h4>
+                                    <h4 className="text-white font-bold mb-2 uppercase tracking-wider group-hover:text-orange-400 transition-colors">Mission Base</h4>
                                     <p className="text-gray-400 text-sm leading-relaxed">
                                         N.K. Orchid College of Engineering & Technology,<br />
                                         Solapur-Pune Highway, Solapur, Maharashtra 413002
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                         </motion.div>
 
                         <motion.div
@@ -81,8 +86,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-bold mb-2 uppercase tracking-wider">Direct Channel</h4>
-                                    <p className="text-gray-400 text-sm">orchathon@orchidengg.ac.in</p>
-                                    <p className="text-gray-400 text-sm mt-1">csesa.nkocet@gmail.com</p>
+                                    <p className="text-gray-400 text-sm mt-1">office@orchidengg.ac.in</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -154,12 +158,14 @@ const Contact = () => {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {[
-                                { name: "Prof.Gulab Shaikh", role: "Staff Coordinator", phone: "+91 98902 92457", image: "/Coordinater/Gulab Shaikh.png" },
+                                { name: "Prof.Pallavi Jawalkar", role: "Faculty Coordinator", phone: "+91 70665 33371", image: "/Coordinater/WhatsApp Image 2026-03-06 at 12.02.41 PM.png" },
+                                { name: "Prof.Gulab Shaikh", role: "Faculty Coordinator", phone: "+91 98902 92457", image: "/Coordinater/Gulab Shaikh.png" },
                                 { name: "Sampanna Nampalli", role: "CSESA President", phone: "+91 95796 42050", image: "/Coordinater/Sampaan Nampelli.png" },
                                 { name: "Omkar Katta ", role: "CSESA Vice-President", phone: "+91 99609 98080", image: "/Coordinater/Omkar Katta.png" },
                                 { name: "Bhaskar Sanam", role: "Treasurer", phone: "+91 86688 54293", image: "/Coordinater/swaghunter.png" },
                                 { name: "Aman Halkude", role: "Technical Head", phone: "+91 92849 19304", image: "/Coordinater/Aman Halkude.png" },
-                                { name: "Athrav Vagare", role: "Event Coordinator", phone: "+91 76200 34644", image: "/Coordinater/Atharav Vagare.png" }
+                                { name: "Athrav Vagare", role: "Event Coordinator", phone: "+91 76200 34644", image: "/Coordinater/Atharav Vagare.png" },
+                                { name: "Bhagyashri Rathod", role: "Secretary", phone: "+91 93099 61066", image: "/Coordinater/Bhagyashri Rathod.png" }
                             ].map((lead, idx) => (
                                 <motion.div
                                     key={idx}
