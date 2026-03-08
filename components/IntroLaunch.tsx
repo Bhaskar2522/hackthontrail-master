@@ -129,8 +129,13 @@ const IntroLaunch = ({ onLaunchComplete }: IntroLaunchProps) => {
                                         filter: 'drop-shadow(0 0 25px rgba(0,224,255,0.4))'
                                     }}
                                 >
-
-                                </motion.div>
+                                    <div className="w-full h-full relative">
+                                        <RocketShip
+                                            active={status === 'igniting' || status === 'countdown-1'}
+                                            variant="cyberpunk"
+                                            className="w-full h-full"
+                                        />
+                                    </div>                                </motion.div>
                             </div>
 
                             {/* Mobile Rocket Fallback (SVG) */}

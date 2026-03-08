@@ -113,7 +113,7 @@ const About = () => {
                         <p className="text-gray-500 font-mono text-xs uppercase tracking-[0.4em]">Archive: Orchathon 2K25</p>
                     </div>
 
-                    <div className="relative group max-w-5xl mx-auto rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+                    <div className="relative group max-w-7xl mx-auto rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.8)]">
                         <div className="aspect-video w-full bg-slate-900 flex items-center justify-center overflow-hidden relative group">
                             {/* VIDEO CONTAINER */}
                             <video
