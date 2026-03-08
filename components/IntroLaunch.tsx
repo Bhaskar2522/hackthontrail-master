@@ -129,18 +129,7 @@ const IntroLaunch = ({ onLaunchComplete }: IntroLaunchProps) => {
                                         filter: 'drop-shadow(0 0 25px rgba(0,224,255,0.4))'
                                     }}
                                 >
-                                    <div className="w-full h-full relative">
-                                        <video
-                                            src="/BehindSence.mp4"
-                                            autoPlay
-                                            loop
-                                            muted
-                                            playsInline
-                                            className="w-full h-full object-cover rounded-lg"
-                                        />
-                                        {/* Overlay to block potential watermark interaction */}
-                                        <div className="absolute bottom-0 right-0 w-32 h-12 bg-black z-20 pointer-events-none" />
-                                    </div>
+
                                 </motion.div>
                             </div>
 
