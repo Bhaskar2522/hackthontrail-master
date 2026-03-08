@@ -227,6 +227,12 @@ const Prizes = () => {
                         ))}
                     </div>
 
+                    <div className="mt-16 text-center">
+                        <p className="text-gray-500 font-mono text-xs uppercase tracking-[0.2em] italic">
+                            * Prizes will be awarded immediately after final presentations and result announcement
+                        </p>
+                    </div>
+
                     {/* Participation Certificate Banner */}
                     <motion.div
                         initial={{ opacity: 0 }}

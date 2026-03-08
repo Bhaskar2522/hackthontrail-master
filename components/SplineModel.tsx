@@ -1,1 +1,0 @@
-Prizes will be awarded immediately after final presentations and result announcement
