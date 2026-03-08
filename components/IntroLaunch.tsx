@@ -131,7 +131,7 @@ const IntroLaunch = ({ onLaunchComplete }: IntroLaunchProps) => {
                                 >
                                     <div className="w-full h-full relative">
                                         <video
-                                            src="/videoplayback.mp4"
+                                            src="/highlights-2k25.mp4"
                                             autoPlay
                                             loop
                                             muted
